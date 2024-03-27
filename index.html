@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <div class="app">
+    <!-- <div class="overlay" id="overlay"></div> -->
+    <div class="landingPage">
+      <div class="header">
+        <figure class="header-logo">
+          <img src="./assets/images/logo.svg" alt="Logo" class="header-logo-img">
+        </figure>
+        <ul class="navLinks">
+          <li class="navLink">Home</li>
+          <li class="navLink">New</li>
+          <li class="navLink">Popular</li>
+          <li class="navLink">Trending</li>
+          <li class="navLink">Categories</li>
+        </ul>
+        <figure class="header-hamburger" onclick="onMobilMenuOpen()">
+          <img class="header-humburber-img" alt="Hamburger Icon" src="./assets/images/icon-menu.svg">
+        </figure>
+        <div class="mobile_menu" id="mobile_menu">
+          <figure class="mobile_menu_close_icon" onclick="onMobilMenuClose()">
+            <img src="./assets/images/icon-menu-close.svg" alt="" class="mobile_menu_close_icon_img">
+          </figure>
+          <ul class="mobile_menuLinks">
+            <li class="mobile_menuLink">Home</li>
+            <li class="mobile_menuLink">New</li>
+            <li class="mobile_menuLink">Popular</li>
+            <li class="mobile_menuLink">Trending</li>
+            <li class="mobile_menuLink">Categories</li>
+          </ul>
+        </div>
+      </div>
+      <section class="main">
+        <div class="cover_section">
+          <figure class="cover_section_banner">
+            <img class="cover_section_banner_img" src="./assets/images/image-web-3-desktop.jpg" alt="Banner Image">
+          </figure>
+          <div class="cover_section_details">
+            <h1 class="cover_section_headline">The Bright Future of Web 3.0?</h1>
+          <div class="cover_section_subHeadLine">
+              <p class="subHeadLine">We dive into the next evolution of the web that claims to put the power of the platform back into the hands of the people. But is it really fulfilling the promise?</p>
+            <button class="cover_section_readmore_btn">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="news_feed">
+          <h1 class="news_feed_title">New</h1>
+          <div class="todays_news">
+            <div class="news">
+              <h3 class="new_headline">Hydrogen VS Electric Cars</h3>
+              <p class="news_description">Will hydrogen-fulled car ever catch up to EVs?</p>
+            </div>
+            <div class="news">
+              <h3 class="new_headline">The Downside of AI Artistry</h1>
+              <p class="news_description">What are the possible adverse of one-demand AI image genration?</p>
+            </div>
+            <div class="news">
+              <h3 class="new_headline">Is VC Funding Dying Up?</h3>
+              <p class="news_description">Private funding by VC firms is down 50% YOY. We take a look at what that means?</p>
+            </div>
+            <div class="news">
+              <h3 class="new_headline">Arival of Davin AI</h3>
+              <p class="news_description">Is the arrival of Davin AI the dawn of a new era in artificial intelligence?</p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section class="trending_section">
+        <div class="trending_item_card">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="" class="trending_item_card_img">
+          <div class="trending_item_card_detail">
+            <h1 class="trending_item_card_serial_no">01</h1>
+            <h3 class="trending_item_card__title">Reviving Retro PCs</h3>
+            <p class="trending_item_card_description">What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="trending_item_card">
+          <img src="./assets/images/image-top-laptops.jpg" alt="" class="trending_item_card_img">
+          <div class="trending_item_card_detail">
+            <h1 class="trending_item_card_serial_no">02</h1>
+            <h3 class="trending_item_card__title">Reviving Retro PCs</h3>
+            <p class="trending_item_card_description">Our best pick for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="trending_item_card">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="" class="trending_item_card_img">
+          <div class="trending_item_card_detail">
+            <h1 class="trending_item_card_serial_no">03</h1>
+            <h3 class="trending_item_card__title">Reviving Retro PCs</h3>
+            <p class="trending_item_card_description">How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
